@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+    <style>
+      /* Reset body margins and padding */
+      body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* Full screen height */
+        background-color: #f4f4f9; /* Light background color */
+      }
+
+      .svg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        background-color: white; /* Neutral background */
+        border-radius: 8px; /* Rounded corners */
+        overflow: hidden;
+        position: relative;
+      }
+
+      iframe {
+        width: 100%; /* Full width of container */
+        height: 100%; /* Full height of container */
+        border: none; /* Remove iframe border */
+      }
+
+      /* Hide parse errors inside iframe */
+      iframe::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: white; /* Matches container background */
+        z-index: 10; /* Covers the error message */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="svg">
+      <!-- The iframe will display your SVG content -->
+      <iframe src="./Tech_Diagram.drawio.svg"></iframe>
+    </div>
+  </body>
+</html>
