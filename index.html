@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
     <title>Document</title>
     <style>
       /* Reset body margins and padding */
@@ -11,8 +10,8 @@
       body {
         margin: 0;
         padding: 0;
-        width: 100%; /* Ensure full-width layout */
-        height: 100%; /* Ensure full-height layout */
+        width: 100%; /* Full width layout */
+        height: 100%; /* Full height layout */
       }
 
       body {
@@ -26,14 +25,13 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 100%;
-        height: 100%;
-        max-width: 1000px; /* Optional: Limit the max size */
-        max-height: 1000px; /* Optional: Limit the max size */
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        width: 90%; /* 90% of the viewport width */
+        height: auto; /* Automatically scale height */
+        max-height: 80%; /* Limit to 80% of viewport height */
         background-color: white; /* Neutral background */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
         border-radius: 8px; /* Rounded corners */
-        overflow: hidden;
+        overflow: hidden; /* Clip overflowing content */
       }
 
       iframe {
