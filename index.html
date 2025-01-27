@@ -10,41 +10,38 @@
         padding: 0;
         box-sizing: border-box;
       }
-
       html,
       body {
         width: 100%;
-        height: 100vh;
-        overflow: hidden;
+        min-height: 200vh;
+        overflow-y: auto;
       }
-
       body {
         display: flex;
-        justify-content: center;
-        align-items: center;
+        flex-direction: column;
         background-color: #f4f4f9;
       }
-
       .svg-container {
-        width: 100%; /* Full width of the browser window */
-        height: 100vh; /* Full height of the browser window */
+        width: 100%;
+        height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
         padding: 5px;
       }
-
       object {
-        width: 100%; /* Full width of the container */
-        height: 100vh; /* Full height of the container */
-        object-fit: contain; /* Ensures the SVG scales proportionally */
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
       }
     </style>
   </head>
   <body>
     <div class="svg-container">
-      <!-- Link to your SVG file -->
       <object type="image/svg+xml" data="image.svg"></object>
+    </div>
+    <div class="svg-container">
+      <object type="image/svg+xml" data="dataflow.drawio.svg"></object>
     </div>
   </body>
 </html>
