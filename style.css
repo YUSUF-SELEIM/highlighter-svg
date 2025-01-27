@@ -24,6 +24,14 @@
   right: 0;
 }
 
+.svg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
 @media (max-width: 768px) {
   #github {
     width: 20px;
